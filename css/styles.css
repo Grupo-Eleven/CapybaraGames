@@ -1,0 +1,66 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+main,header,footer{
+  align-self: center;
+}
+
+form{
+   text-align: center;
+   margin: 0 auto;
+    width: 300px;
+}
+
+form label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+form label input,textarea{
+    width: 170px;
+  
+   
+}
+
+ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    
+}
+
+ul li{
+    list-style: none;
+    margin: 0px 15px;
+}
+
+ol{
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    
+}
+
+ol li{
+    list-style: none;
+    margin: 0px 15px;
+    text-align: start;
+}
+
+
+a{
+    text-decoration: none;
+
+}
+
