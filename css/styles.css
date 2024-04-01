@@ -9,13 +9,31 @@ body{
     text-align: center;
 }
 
-main,header,footer{
-  align-self: center;
+
+main {
+    margin: 0 auto;
+    width: 95vw;
+    max-width: 95vw;
+    justify-content: center;
+}
+
+main h3 { 
+    text-align: start;
+    margin-left: 5vw;
+    width: 100%;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
 form{
-   text-align: center;
-   margin: 0 auto;
+    text-align: center;
+    margin: 0 auto;
     width: 300px;
 }
 
@@ -39,7 +57,7 @@ ul{
     
 }
 
-ul li{
+ul li{ /*nav bar*/
     list-style: none;
     margin: 0px 15px;
 }
@@ -48,19 +66,49 @@ ol{
     padding: 0;
     text-align: center;
     margin: 0 auto;
-    width: 300px;
+    width: auto;
     
 }
-
-ol li{
-    list-style: none;
-    margin: 0px 15px;
-    text-align: start;
-}
-
 
 a{
     text-decoration: none;
 
 }
+
+.game-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-list li{
+    margin: 4px 4px;
+    list-style: none;
+    width: auto;
+    height: 145px;
+    position: relative;
+}
+
+.game-list a {
+    display: block;
+    align-items: center;
+    max-width: 200px;
+    width: 200px;
+}
+
+.game-list p {
+    display:block;
+    text-overflow:ellipsis ;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0;
+}
+
+
+.game-list img {
+    object-fit: cover;
+    width: 200px;
+    height: 120px;
+}
+
 
