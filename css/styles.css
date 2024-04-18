@@ -1,14 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Orbitron:wght@400..900&display=swap');
+
+:root {
+    --dark-green: #4a7337;
+    --light-green: #80af6a;
+    --beige: #ddd48f;
+    --light-brown: #cda989;
+    --dark-brown: #462e1b;
+}
 
 *{
     box-sizing: border-box;
+    font-family: 'Orbitron';
+    font-weight: 400;
+    letter-spacing: 1.1px;
 }
 
 body{
     display: block;
     justify-content: center;
     text-align: center;
+    background-color: var(--dark-brown);
+    color: var(--beige);
 }
-
 
 main {
     margin: 0 auto;
@@ -17,11 +31,22 @@ main {
     justify-content: center;
 }
 
+header h1 { 
+    font-weight: 700;
+    font-size: 48px;
+}
+
+main h2 { 
+    font-weight: 600;
+    font-size: 28px;
+}
+
 main h3 { 
     text-align: start;
     margin-left: 5vw;
     width: 100%;
-
+    font-weight: 500;
+    font-size: 24px;
 }
 
 footer {
@@ -29,6 +54,13 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+footer p {
+    font-weight: 300;
+    font-size: 16px;
+    font-family: 'Chakra Petch';
+    margin: 6px 0 ;
 }
 
 form{
@@ -46,15 +78,12 @@ form label{
 
 form label input,textarea{
     width: 170px;
-  
-   
 }
 
 ul{
     padding: 0;
     display: flex;
     justify-content: center;
-    
 }
 
 ul li{ /*nav bar*/
@@ -67,12 +96,14 @@ ol{
     text-align: center;
     margin: 0 auto;
     width: auto;
-    
 }
 
 a{
     text-decoration: none;
-
+    color: var(--light-green);
+    font-family: 'Chakra Petch';
+    letter-spacing: 1.1px;
+    font-size: 20px;
 }
 
 .game-list{
@@ -81,7 +112,7 @@ a{
     flex-wrap: wrap;
 }
 
-.game-list li{
+.game-list li {
     margin: 4px 4px;
     list-style: none;
     width: auto;
@@ -102,6 +133,9 @@ a{
     white-space: nowrap;
     overflow: hidden;
     margin: 0;
+    font-family: 'Chakra Petch';
+    letter-spacing: 1.1px;
+    font-size: 19px;
 }
 
 
@@ -111,4 +145,8 @@ a{
     height: 120px;
 }
 
+/* Imagenes de miniatura estan mal, se estan usando imagenes pesadas modificandole el tamaño, Thumb
 
+Seguir viendo temas de diseño
+
+Hacer animaciones*/
