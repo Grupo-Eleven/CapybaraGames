@@ -22,6 +22,7 @@ body{
     text-align: center;
     background-color: var(--dark-brown);
     color: var(--beige);
+    animation: fadeIn 1s;
 }
 
 main {
@@ -145,8 +146,17 @@ a{
     height: 120px;
 }
 
+/* ANIMACIONES */
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* ----------- */
+
 /* Imagenes de miniatura estan mal, se estan usando imagenes pesadas modificandole el tamaño, Thumb
 
 Seguir viendo temas de diseño
 
-Hacer animaciones*/
+*/
