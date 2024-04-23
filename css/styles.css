@@ -76,7 +76,8 @@ form label{
     margin-bottom: 6px;
 }
 
-form label input,textarea{
+form label input,
+form label textarea{
     width: 170px;
 }
 
@@ -86,7 +87,8 @@ ul{
     justify-content: center;
 }
 
-ul li{ /*nav bar*/
+/*nav bar*/
+ul li{
     list-style: none;
     margin: 0px 15px;
 }
