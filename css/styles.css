@@ -159,10 +159,6 @@ a{
         grid-template-columns: repeat(auto-fit, 100%);
     }
 
-    .game-list li {
-        margin: 0 30px;
-    }
-
     .game-list a {
         height: 50vw;
     }
