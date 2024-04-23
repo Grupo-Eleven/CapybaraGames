@@ -27,7 +27,7 @@ body{
 
 main {
     margin: 0 auto;
-    width: 95vw;
+    width: 90vw;
     max-width: 95vw;
     justify-content: center;
 }
@@ -44,7 +44,6 @@ main h2 {
 
 main h3 { 
     text-align: start;
-    margin-left: 5vw;
     width: 100%;
     font-weight: 500;
     font-size: 24px;
@@ -108,42 +107,39 @@ a{
 }
 
 .game-list{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 100px 30px;
 }
 
 .game-list li {
-    margin: 4px 4px;
     list-style: none;
-    width: auto;
-    height: 145px;
-    position: relative;
 }
 
 .game-list a {
     display: block;
-    align-items: center;
-    max-width: 200px;
-    width: 200px;
+    text-align: center;
+    width: 100%;
+    height: 190px;
+}
+
+.game-list img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .game-list p {
-    display:block;
-    text-overflow:ellipsis ;
+    display: block;
+    text-overflow: ellipsis ;
     white-space: nowrap;
     overflow: hidden;
     margin: 0;
     font-family: 'Chakra Petch';
     letter-spacing: 1.1px;
     font-size: 19px;
-}
-
-
-.game-list img {
-    object-fit: cover;
-    width: 200px;
-    height: 120px;
+    max-width: 100%;
 }
 
 /* ANIMACIONES */
@@ -154,6 +150,66 @@ a{
 }
 
 /* ----------- */
+
+/* MEDIA QUERIES */
+
+/* MOBILE */
+@media screen and (max-width: 699px) {
+    .game-list {
+        grid-template-columns: repeat(auto-fit, 100%);
+    }
+
+    .game-list li {
+        margin: 0 30px;
+    }
+
+    .game-list a {
+        height: 50vw;
+    }
+
+    .game-list p {
+        font-size: 26px;
+    }
+}
+
+/* TABLET */
+@media screen and (min-width: 700px) and (max-width: 1066px) {
+    .game-list {
+        grid-template-columns: repeat(auto-fit, 45%);
+    }
+
+    .game-list a {
+        height: 25vw;
+    }
+
+    .game-list p {
+        font-size: 22px;
+    }
+}
+
+/* DESKTOP SMALL */
+@media screen and (min-width: 1067px) and (max-width: 1433px) {
+    .game-list {
+        grid-template-columns: repeat(auto-fit, 30%);
+    }
+
+    .game-list a {
+        height: 16vw;
+    }
+}
+
+/* DESKTOP MEDIUM */
+@media screen and (min-width: 1434px) and (max-width: 1799px) {
+    .game-list {
+        grid-template-columns: repeat(auto-fit, 22%);
+    }
+
+    .game-list a {
+        height: 12vw;
+    }
+}
+
+/* ------------- */
 
 /* Imagenes de miniatura estan mal, se estan usando imagenes pesadas modificandole el tamaño, Thumb
 
