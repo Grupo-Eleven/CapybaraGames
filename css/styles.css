@@ -110,7 +110,7 @@ a{
     display: grid;
     justify-content: space-around;
     grid-template-columns: repeat(auto-fit, 300px);
-    gap: 100px 30px;
+    gap: 75px 30px;
 }
 
 .game-list li {
