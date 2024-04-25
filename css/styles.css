@@ -33,8 +33,15 @@ main {
 }
 
 header h1 { 
+    text-shadow: #000000 4px 4px 12px;
     font-weight: 700;
     font-size: 48px;
+    border:groove var(--light-brown);
+    border-top:none;
+    border-radius: 3.5px;
+    border-left:none;
+    box-shadow: var(--light-brown) 10px 10px 15px -12px;
+    margin: 0px 25px;
 }
 
 main h2 { 
@@ -81,16 +88,26 @@ form label textarea{
     width: 170px;
 }
 
-ul{
+nav ul{
     padding: 0;
     display: flex;
     justify-content: center;
 }
 
 /*nav bar*/
-ul li{
+nav ul li{
     list-style: none;
     margin: 0px 15px;
+}
+
+aside ul{
+    display: block;
+    text-align: start;
+}
+
+aside ul li{
+    margin: 15px 0px;
+    list-style: none;    
 }
 
 ol{
@@ -168,6 +185,8 @@ a{
     .game-list p {
         font-size: 26px;
     }
+
+
 }
 
 /* TABLET */
@@ -207,6 +226,68 @@ a{
     }
 }
 
+/* MOBILE ASIDE */
+
+@media screen and (max-width: 466px) {
+    header div {
+        display: flex;
+        align-items: center;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    header aside {
+        display: block;
+        width: 100%;
+    }
+
+    #aside-button {
+        padding: 0;
+        height: 75px;
+        width: 110px;
+        margin: 10px;
+        margin-left: 15px;
+        border: none;
+        border-radius: 15px;
+        background: transparent;
+        background:no-repeat center url('/img/bars-solid.svg');
+        background-size: cover;
+        transition: transform .4s;
+    }
+
+    #aside-button:active {
+        background: no-repeat center url('/img/x-solid.svg');
+        transform: rotate(0.5turn);
+        transition: transform .4s;
+        background-position-x: 5px;
+        background-size: cover;
+    }
+
+}
+
+/* PC NAVBAR */
+
+@media screen and (min-width: 467px) {
+    header h1 {
+        margin: 10px auto;
+        padding-bottom: 12px;
+        width: 490px;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header aside {
+        display: none;
+    }
+
+    #aside-button {
+        display: none;
+    }
+}
 /* ------------- */
 
 /* Imagenes de miniatura estan mal, se estan usando imagenes pesadas modificandole el tamaño, Thumb
