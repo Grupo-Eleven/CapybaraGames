@@ -42,6 +42,10 @@ header h1 {
     border-left:none;
     box-shadow: var(--light-brown) 10px 10px 15px -12px;
     margin: 0px 25px;
+    padding-right: 12px;
+    text-overflow: ellipsis ;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 main h2 { 
@@ -147,6 +151,7 @@ a{
     object-fit: cover;
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 
 .game-list p {
@@ -159,6 +164,26 @@ a{
     letter-spacing: 1.1px;
     font-size: 19px;
     max-width: 100%;
+}
+
+.add-new a{
+    border: var(--light-brown) dashed 7px;
+    border-radius: 20px;
+}
+
+.add-new div {
+    height: 43%;
+}
+
+.add-new p {
+    color: var(--light-brown);
+}
+
+.add-new a:hover {
+    border-color: white;
+}
+.add-new a:hover p {
+    color: white;
 }
 
 /* ANIMACIONES */
@@ -174,6 +199,9 @@ a{
 
 /* MOBILE */
 @media screen and (max-width: 699px) {
+    header h1 {
+        font-size: 7vw;
+    }
     .game-list {
         grid-template-columns: repeat(auto-fit, 100%);
     }
@@ -242,29 +270,6 @@ a{
         display: block;
         width: 100%;
     }
-
-    #aside-button {
-        padding: 0;
-        height: 75px;
-        width: 110px;
-        margin: 10px;
-        margin-left: 15px;
-        border: none;
-        border-radius: 15px;
-        background: transparent;
-        background:no-repeat center url('/img/bars-solid.svg');
-        background-size: cover;
-        transition: transform .4s;
-    }
-
-    #aside-button:active {
-        background: no-repeat center url('/img/x-solid.svg');
-        transform: rotate(0.5turn);
-        transition: transform .4s;
-        background-position-x: 5px;
-        background-size: cover;
-    }
-
 }
 
 /* PC NAVBAR */

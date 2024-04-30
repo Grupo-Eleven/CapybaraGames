@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capybara Games</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Capybara Games</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videogames-list.html">Lista de Videojuegos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <aside>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="videogames-list.html">Lista de Videojuegos</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
+        </aside>
+    </header>
+    <main>
+        <h2>Agregar videojuego</h2>
+        <form action="#" method="post">
+            <label for="name">Titulo<input required type="text" id="title" name="title" placeholder="Nombre"></label> 
+            <label for="message">Descripción<textarea required id="description" name="description" placeholder="Descripción"></textarea></label>
+            <label for="platform">Crossplay
+                <input required type="radio" id="mobile" name="fav_language" value="1">
+                <label for="mobile">Mobile</label><br>
+                <input type="radio" id="desktop" name="fav_language" value="2">
+                <label for="desktop">Escritorio</label><br>
+                <input type="radio" id="multiplatform" name="fav_language" value="3">
+                <label for="multiplatform">Multiplatforma</label>
+            </label> 
+            <label for="category">Categoría<select required type="select" id="category" name="category" placeholder="Categoría">
+                <option value="">Elige una categoría.</option>
+                <option value="1">Plataformas</option>
+                <option value="2">Mundo abierto</option>
+                <option value="3">2D</option>
+                <option value="4">3D</option>
+            </select></label>
+            <label for="image">Imagen<input required type="file" id="image" name="image"></label> 
+            <label for="image">URL<input required type="url" id="url" name="url" placeholder="https://example.com"></label> 
+            <button type="submit" value="Submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>Derechos de autor © 2024 CapybaraGames</p>
+        <p>Contáctanos en info@capybaragames.com</p>
+    </footer>
+</body>
+</html>
