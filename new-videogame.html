@@ -27,17 +27,17 @@
     </header>
     <main>
         <h2>Agregar videojuego</h2>
-        <form action="#" method="post">
+        <form class="newgame-form" action="#" method="post">
             <label for="name">Titulo<input required type="text" id="title" name="title" placeholder="Nombre"></label> 
             <label for="message">Descripción<textarea required id="description" name="description" placeholder="Descripción"></textarea></label>
-            <label for="platform">Crossplay
-                <input required type="radio" id="mobile" name="fav_language" value="1">
-                <label for="mobile">Mobile</label><br>
-                <input type="radio" id="desktop" name="fav_language" value="2">
-                <label for="desktop">Escritorio</label><br>
-                <input type="radio" id="multiplatform" name="fav_language" value="3">
-                <label for="multiplatform">Multiplatforma</label>
-            </label> 
+            <ul><label for="platform">Crossplay</label>
+                <li><input required type="radio" id="mobile" name="fav_language" value="1">
+                <label for="mobile">Mobile</label></li>
+                <li><input type="radio" id="desktop" name="fav_language" value="2">
+                <label for="desktop">Escritorio</label></li>
+                <li><input type="radio" id="multiplatform" name="fav_language" value="3">
+                <label for="multiplatform">Multiplatforma</label></li>
+            </ul> 
             <label for="category">Categoría<select required type="select" id="category" name="category" placeholder="Categoría">
                 <option value="">Elige una categoría.</option>
                 <option value="1">Plataformas</option>
@@ -47,7 +47,8 @@
             </select></label>
             <label for="image">Imagen<input required type="file" id="image" name="image"></label> 
             <label for="image">URL<input required type="url" id="url" name="url" placeholder="https://example.com"></label> 
-            <button type="submit" value="Submit">Enviar</button>
+            <label class="submit-button" for="">ENVIAR</label>
+            <button type="submit" value="Submit"></button>
         </form>
     </main>
     <footer>
