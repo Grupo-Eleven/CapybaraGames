@@ -98,6 +98,42 @@ form label ul li {
     display: flex;
 }
 
+nav ul{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li{
+    list-style: none;
+    margin: 0px 15px;
+}
+
+aside ul{
+    display: block;
+    text-align: start;
+}
+
+aside ul li{
+    margin: 15px 0px;
+    list-style: none;    
+}
+
+ol{
+    padding: 0;
+    text-align: center;
+    margin: 0 auto;
+    width: auto;
+}
+
+a{
+    text-decoration: none;
+    color: var(--light-green);
+    font-family: 'Chakra Petch';
+    letter-spacing: 1.1px;
+    font-size: 20px;
+}
+
 .newgame-form ul {
     padding:0 0;
     list-style: none;
@@ -131,43 +167,6 @@ form label ul li {
     text-align: center;
     margin: 0 auto;
     width: 300px;
-}
-
-nav ul{
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-/*nav bar*/
-nav ul li{
-    list-style: none;
-    margin: 0px 15px;
-}
-
-aside ul{
-    display: block;
-    text-align: start;
-}
-
-aside ul li{
-    margin: 15px 0px;
-    list-style: none;    
-}
-
-ol{
-    padding: 0;
-    text-align: center;
-    margin: 0 auto;
-    width: auto;
-}
-
-a{
-    text-decoration: none;
-    color: var(--light-green);
-    font-family: 'Chakra Petch';
-    letter-spacing: 1.1px;
-    font-size: 20px;
 }
 
 .game-list{
@@ -227,7 +226,6 @@ a{
     color: white;
 }
 
-
 /* ANIMACIONES */
 
 @keyframes fadeIn {
@@ -255,8 +253,6 @@ a{
     .game-list p {
         font-size: 26px;
     }
-
-
 }
 
 /* TABLET */
