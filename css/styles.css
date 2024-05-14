@@ -134,6 +134,65 @@ a{
     font-size: 20px;
 }
 
+/* GALERA */
+
+.galery{
+    display: flex;
+    width: 90vw;
+    height: 200px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.galery a {
+    display: flex;
+}
+.galery a, .galery a img{
+    width: 0px;
+    height: 150px;
+    flex-grow: 1;
+    object-fit: cover;
+    transition: .5s ease;
+    filter: brightness(100%);
+}
+.galery:hover a img{
+    filter: brightness(30%);
+}
+.galery a:hover, .galery a img:hover{
+    cursor: pointer;
+    width: 600px;
+    height: 500px;
+    filter: brightness(100%);
+}
+
+/* SLIDER */
+
+.slider {
+    aspect-ratio: 16/10;
+    position: relative;
+    display: none;
+    overflow: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.slider a{
+    margin: 0 0;
+    width: 90%;
+    left: 0;
+    position: sticky;
+    object-fit: cover;
+    border-radius: 5px;
+    scroll-snap-align: start;
+}
+
+.slider img {
+    width: 90vw;
+    height: 100%;
+    left: 0;
+    position: sticky;
+}
+
 .newgame-form ul {
     padding:0 0;
     list-style: none;
@@ -252,6 +311,14 @@ a{
 
     .game-list p {
         font-size: 26px;
+    }
+
+    .galery {
+        display: none;
+    }
+
+    .slider {
+        display: flex;
     }
 }
 
