@@ -44,7 +44,6 @@ header h1 {
     margin: 0px 25px;
     padding-right: 12px;
     padding-left: 15px;
-    text-overflow: ellipsis ;
     white-space: nowrap;
     overflow: hidden;
 }
