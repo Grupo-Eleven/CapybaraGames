@@ -27,26 +27,27 @@
     </header>
     <main>
         <h2>Agregar videojuego</h2>
-        <form class="newgame-form" action="#" method="post">
-            <label for="name">Titulo<input required type="text" id="title" name="title" placeholder="Nombre"></label> 
-            <label for="message">Descripción<textarea required id="description" name="description" placeholder="Descripción"></textarea></label>
-            <ul><label for="platform">Crossplay</label>
-                <li><input required type="radio" id="mobile" name="fav_language" value="1">
+        <form class="newgame-form"  method="post" onsubmit="addNewVideogame(event)">
+            <label for="name">Titulo<input type="text" id="title" name="title" placeholder="Nombre"></label> 
+            <label for="message">Descripción<textarea id="description" name="description" placeholder="Descripción"></textarea></label>
+            <ul id="platform">
+                <label for="platform">Crossplay</label>
+                <li><input type="radio" id="mobile" name="fav_language" value="1">
                 <label for="mobile">Mobile</label></li>
                 <li><input type="radio" id="desktop" name="fav_language" value="2">
                 <label for="desktop">Escritorio</label></li>
                 <li><input type="radio" id="multiplatform" name="fav_language" value="3">
                 <label for="multiplatform">Multiplatforma</label></li>
             </ul> 
-            <label for="category">Categoría<select required type="select" id="category" name="category" placeholder="Categoría">
+            <label for="category">Categoría<select type="select" id="category" name="category" placeholder="Categoría">
                 <option value="">Elige una categoría.</option>
                 <option value="1">Plataformas</option>
                 <option value="2">Mundo abierto</option>
                 <option value="3">2D</option>
                 <option value="4">3D</option>
             </select></label>
-            <label for="image">Imagen<input required type="file" id="image" name="image"></label> 
-            <label for="image">URL<input required type="url" id="url" name="url" placeholder="https://example.com"></label> 
+            <label for="image">Imagen<input type="file" id="image" name="image"></label> 
+            <label for="image">URL<input type="url" id="url" name="url" placeholder="https://example.com"></label> 
             <label class="submit-button" for="">ENVIAR</label>
             <button type="submit" value="Submit"></button>
         </form>
@@ -55,5 +56,6 @@
         <p>Derechos de autor © 2024 CapybaraGames</p>
         <p>Contáctanos en info@capybaragames.com</p>
     </footer>
+    <script src="/js/index.js"></script>
 </body>
 </html>

@@ -17,6 +17,7 @@
 }
 
 body{
+    margin: 0;
     display: block;
     justify-content: center;
     text-align: center;
@@ -61,10 +62,12 @@ main h3 {
 }
 
 footer {
-    position: absolute;
     margin-top: 75px;
+    padding-top: 25px;
+    padding-bottom: 50px;
     left: 0;
     right: 0;
+    background-color: var(--dark-green);
 }
 
 footer p {
@@ -87,45 +90,48 @@ form label{
     margin-bottom: 6px;
 }
 
-form label input,
-form label textarea{
-    
-}
-
 form label ul li {
     list-style: none;
     display: flex;
 }
 
-nav ul{
+nav {
+    margin: 25px 0;
+}
+
+nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
     margin: 0px 15px;
 }
 
-aside ul{
+nav ul li a:hover {
+    border: 2px solid var(--light-brown);
+}
+
+aside ul {
     display: block;
     text-align: start;
 }
 
-aside ul li{
+aside ul li {
     margin: 15px 0px;
     list-style: none;    
 }
 
-ol{
+ol {
     padding: 0;
     text-align: center;
     margin: 0 auto;
     width: auto;
 }
 
-a{
+a {
     text-decoration: none;
     color: var(--light-green);
     font-family: 'Chakra Petch';
@@ -138,30 +144,36 @@ a{
 .galery{
     display: flex;
     width: 90vw;
-    height: 200px;
-    border-radius: 50%;
+    min-width: 200px;
+    height: 10vw;
     justify-content: center;
     align-items: center;
+    margin: 70px 0;
 }
 .galery a {
     display: flex;
+    margin: 0 10px;
 }
 .galery a, .galery a img{
     width: 0px;
-    height: 150px;
+    height: 10vw;
+    border-radius: 10px;
     flex-grow: 1;
     object-fit: cover;
     transition: .5s ease;
     filter: brightness(100%);
+    max-width: 470px;
+    max-height: 280px;
 }
 .galery:hover a img{
     filter: brightness(30%);
 }
 .galery a:hover, .galery a img:hover{
     cursor: pointer;
-    width: 600px;
-    height: 500px;
+    width: 30vw;
+    height: 25vw;
     filter: brightness(100%);
+    z-index: 1;
 }
 
 /* SLIDER */
