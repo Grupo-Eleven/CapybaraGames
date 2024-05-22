@@ -27,7 +27,7 @@
     </header>
     <main>
         <h2>Agregar videojuego</h2>
-        <form class="newgame-form"  method="post" onsubmit="addNewVideogame(event)">
+        <form class="newgame-form" method="post" onsubmit="addNewVideogame(event)">
             <label for="title">Titulo<input type="text" id="title" name="title" placeholder="Nombre"></label> 
             <label for="description">Descripción<textarea id="description" name="description" placeholder="Descripción"></textarea></label>
             <ul id="platform">
@@ -48,8 +48,10 @@
             </select></label>
             <label for="image">Imagen<input type="file" id="image" name="image"></label> 
             <label for="url">URL<input type="url" id="url" name="url" placeholder="https://example.com"></label> 
-            <label class="submit-button">ENVIAR</label>
-            <button type="submit" value="Submit"></button>
+            <div class="submit-button">
+                <label for="new-videogame-submit" class="submit-label-button">ENVIAR</label>
+                <button style="display: none;" id="new-videogame-submit" type="submit" value="Submit"></button>
+            </div>
         </form>
     </main>
     <footer>

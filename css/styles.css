@@ -37,6 +37,7 @@ header h1 {
     text-shadow: #000000 4px 4px 12px;
     font-weight: 700;
     font-size: 48px;
+    color: var(--beige);
     border:groove var(--light-brown);
     border-top:none;
     border-radius: 3.5px;
@@ -111,7 +112,7 @@ nav ul li {
 }
 
 nav ul li a:hover {
-    border: 2px solid var(--light-brown);
+    color: var(--beige);
 }
 
 aside ul {
@@ -225,12 +226,18 @@ a {
 }
 
 .newgame-form .submit-button {
+    display: flex;
+    justify-content: center;
+}
+
+.newgame-form .submit-button .submit-label-button {
     background-color: var(--dark-brown);
     border: solid var(--light-brown);
     border-radius:8px ;
     color: var(--dark-green);
     text-align: center;
-    width: 100%;
+    width: 100px;
+    margin-top: 25px;
 }
 
 .contact-form {

@@ -20,3 +20,7 @@ const addNewVideogame = (e) => {
         alert('Formulario enviado.')
     }
 }
+
+const sendContactForm = (e) => {
+    e.preventDefault();
+}
