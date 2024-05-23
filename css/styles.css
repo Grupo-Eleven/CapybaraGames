@@ -22,7 +22,7 @@ body{
     justify-content: center;
     text-align: center;
     background-color: var(--dark-brown);
-    color: var(--beige);
+    color: var(--light-brown);
 }
 
 main {
@@ -33,11 +33,15 @@ main {
     animation: fadeIn 1s;
 }
 
+p {
+    color: var(--beige);
+}
+
 header h1 { 
     text-shadow: #000000 4px 4px 12px;
     font-weight: 700;
     font-size: 48px;
-    color: var(--beige);
+    color: var(--light-brown);
     border:groove var(--light-brown);
     border-top:none;
     border-radius: 3.5px;
@@ -303,6 +307,39 @@ a {
     color: white;
 }
 
+/* PAGINA DE VIDEOJUEGO */
+
+.details-videogame .details-img {
+    display: flex;
+}
+
+.details-videogame .details-img img {
+    width: 50vw;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.details-videogame .details-info {
+    width: 50vw;
+    text-align: start;
+    margin-left: 20px;
+}
+
+.details-videogame .details-info p, .details-videogame .details-info a {
+    margin: 0 0;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.details-videogame .details-info h3 {
+    margin: 10px 0;
+}
+
+.details-videogame .details-description {
+    text-align: start;
+    margin-left: 10px;
+}
+
 /* ANIMACIONES */
 
 @keyframes fadeIn {
@@ -337,6 +374,22 @@ a {
 
     .slider {
         display: flex;
+    }
+
+    .details-videogame .details-img {
+        display: block;
+    }
+
+    .details-videogame .details-img img {
+        width: 85vw;
+        object-fit: cover;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+
+    .details-videogame .details-info p, .details-videogame .details-info a {
+        margin: 0 0;
+        margin-bottom: 20px;
     }
 }
 
